@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Bold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Black.woff2");
+  font-weight: 900;
+}
+
+/* RESET THE DEFAULT STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DEFINE CUSTOM PROPERTIES */
+:root {
+  /* define shades of grey */
+  --grey-25: #fcfcfc;
+  --grey-50: #fafafa;
+  --grey-100: #f4f4f5;
+  --grey-200: #e4e4e7;
+  --grey-300: #d1d1d6;
+  --grey-400: #a0a0ab;
+  --grey-500: #70707b;
+  --grey-600: #51525c;
+  --grey-700: #3f3f46;
+  --grey-800: #26272b;
+  --grey-900: #18181b;
+
+  /* define font-family and font-weight */
+  --ff-satoshi: "satoshi";
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* define font-size */
+  --heading-large: 10.4rem;
+  --heading-medium: 6.4rem;
+  --heading-regular: 5.2rem;
+
+  --font-extra-large: 2rem;
+  --font-large: 1.8rem;
+  --font-medium: 1.6rem;
+  --font-small: 1.4rem;
+}
+html {
+  font-size: 62.5%; /* equivalent to 10px */
+}
+body {
+  font-family: var(--ff-satoshi);
+  font-size: var(--font-large);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  color: var(--grey-500);
+}
+
+/* HEADER SECTION STYLE START */
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  color: var(--grey-25);
+}
+.main-nav .logo {
+  font-size: var(--font-extra-large);
+  font-weight: var(--fw-black);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.main-nav .logo .logo-icon {
+  line-height: 0;
+}
+.main-nav .nav-items {
+  list-style-type: none;
+  display: flex;
+  gap: 2.6rem;
+  font-size: var(--font-small);
+}
+.main-nav .nav-items a {
+  text-decoration: none;
+  color: var(--grey-25);
+}
+.main-nav .btn-cta {
+  padding: 1.6rem 1.8rem;
+  font-size: var(--font-large);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+  background-color: var(--grey-25);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* HEADER SECTION STYLE END */
+
+/* HEREO SECTION STYLE START */
+.hero {
+  background-image: url("../assets/hero/hero-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  display: flex;
+  align-items: flex-end;
+}
+.hero::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 40%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero::after {
+  content: "";
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 90%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero .hero-block {
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: flex-end;
+}
+.hero h1 {
+  font-size: var(--heading-large);
+  color: var(--grey-25);
+  font-weight: var(--fw-regular);
+  line-height: 1;
+  position: relative;
+}
+.hero h1 .arrow-down {
+  background-color: rgba(255, 255, 255, 0.1);
+  line-height: 0;
+  position: absolute;
+  right: 10.5rem;
+  bottom: 0;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.hero .hero-image-gallery {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 15px;
+}
+.hero .gallery-image {
+  width: 180px;
+  line-height: 0;
+}
+.hero .gallery-image img {
+  width: 100%;
+}
+
+/* HERO SECTION STYLE END */
