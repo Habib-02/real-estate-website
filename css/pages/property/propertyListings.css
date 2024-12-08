@@ -1,0 +1,172 @@
+@import url("../home/property-listings.css");
+
+.property {
+  padding: 6rem 0;
+}
+.property h2 {
+  font-size: var(--heading-two-medium);
+  font-weight: var(--fw-regular);
+  color: var(--grey-900);
+  line-height: 1.3;
+}
+.property .property-text {
+  font-size: var(--font-small);
+  color: var(--grey-500);
+  margin: 2.4rem 0;
+}
+
+.property input[name="search-property"] {
+  padding: 1.2rem 2.2rem 1.2rem 4.8rem;
+  border-radius: 5px;
+  font-size: var(--font-medium);
+  border: 1px solid var(--grey-400);
+  outline: none;
+  width: 100%;
+}
+.property .input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.property .search-icon-wrapper {
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 0;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.5rem;
+}
+.property .setting {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--grey-400);
+  padding: 1.2rem;
+  box-sizing: content-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.property .search-input {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.property-page-listings .property-listing {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+.property-listing {
+  padding-top: 4rem;
+}
+.property-page-listings .btn {
+  display: block;
+  margin: 0 auto;
+}
+.desktop-only {
+  display: none;
+}
+
+/* TABLET VERSION */
+@media screen and (min-width: 868px) {
+  .property .property-text-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 5.5rem;
+  }
+  .property-page-listings .property-listing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .desktop-only {
+    display: block;
+  }
+  .property-listing {
+    padding-top: 0;
+  }
+  .propety .property-text-block {
+    font-size: var(--heading-medium);
+  }
+  .property .main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 3.5rem;
+    padding-top: 4rem;
+  }
+
+  .property .main-content .form-group {
+    display: flex;
+  }
+  .property .main-content .sell-rent {
+    border: 1px solid var(--grey-300);
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.4rem;
+    border-radius: 5px;
+  }
+  .property .main-content .sell-rent p {
+    background-color: var(--grey-900);
+    color: var(--grey-25);
+    text-align: center;
+    font-size: var(--font-medium);
+    font-weight: var(--fw-medium);
+    padding: 1rem 0;
+    border-radius: 5px;
+  }
+  .property .main-content .sell-rent p:last-child {
+    background-color: var(--grey-25);
+    color: var(--grey-900);
+  }
+  .property .main-content .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+  }
+  .property .main-content article > h3 {
+    font-size: var(--font-extra-large);
+    font-weight: var(--fw-medium);
+    color: var(--grey-900);
+    margin-bottom: 1.6rem;
+  }
+  .property .main-content article label {
+    font-size: var(--font-medium);
+    color: var(--grey-900);
+    margin-left: 0.8rem;
+  }
+  .property .main-content .form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  .property .main-content article input:not(input[type="range"]) {
+    border: 1px solid var(--grey-400);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .property .main-content article input[type="range"] {
+    width: 100%;
+  }
+  .property .main-content .price-range .range {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .property .main-content .price-range .range p {
+    font-size: var(--font-small);
+    font-weight: var(--fw-bold);
+    color: var(--grey-900);
+  }
+  .property .main-content .price-range .range p span {
+    font-weight: var(--fw-regular);
+    color: var(--grey-500);
+  }
+}

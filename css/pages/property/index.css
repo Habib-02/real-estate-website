@@ -1,5 +1,14 @@
 /* import base css */
-@import url('../../base.css');
+@import url("../../base.css");
 
 /* import header css */
-@import url('./header.css');
+@import url("./header.css");
+
+/* import property listings css */
+@import url("./propertyListings.css");
+
+/* import contact sectoin css */
+@import url("./contact.css");
+
+/* import footer css */
+@import url("./footer.css");

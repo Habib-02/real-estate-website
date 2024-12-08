@@ -87,10 +87,787 @@
     <!-- PROPERTY LISTING SECTION START -->
     <section class="property">
       <div class="container">
-        <h2>Explore Our Property Listings</h2>
+        <div class="property-text-block">
+          <h2>Explore Our Property Listings</h2>
+          <p class="property-text">
+            Discover our curated selection of properties that cater to various
+            lifestyles and budgets. Whether you're searching for a modern city
+            apartment, a cozy suburban home, or an investment property, our
+            listings have something for everyone.
+          </p>
+        </div>
+        <div class="property-page-listings">
+          <form class="search-input">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="search-property"
+                id="search-property"
+                placeholder="Search Your Dream Property"
+              />
+              <div class="search-icon-wrapper">
+                <img src="../assets/property-section/search.png" alt="" />
+              </div>
+            </div>
+            <img
+              class="setting"
+              src="../assets/property-section/setting.svg"
+              alt=""
+            />
+          </form>
+          <div class="main-content">
+            <section class="sidebar desktop-only">
+              <div class="sell-rent">
+                <p>Sell</p>
+                <p>Rent</p>
+              </div>
+              <form class="filter">
+                <article>
+                  <h3>Category</h3>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="house"
+                      id="house"
+                      value="house"
+                    />
+                    <label for="house">House</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="apartment"
+                      id="apartment"
+                      value="apartment"
+                    />
+                    <label for="apartment">Apartment</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="villa"
+                      id="villa"
+                      value="villa"
+                    />
+                    <label for="villa">Villa</label>
+                  </div>
+                </article>
+                <article>
+                  <h3>Location</h3>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="london"
+                      id="london"
+                      value="london"
+                    />
+                    <label for="london">London</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="manchester"
+                      id="manchester"
+                      value="manchester"
+                    />
+                    <label for="manchester">Manchester</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="Southampton"
+                      id="southampton"
+                      value="southampton"
+                    />
+                    <label for="southampton">Southampton</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="Chelmsford"
+                      id="chelmsford"
+                      value="chelmsford"
+                    />
+                    <label for="chelmsford">Celmsford</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                      name="liverpool"
+                      id="liverpool"
+                      value="liverpool"
+                    />
+                    <label for="liverpool">Liverpool</label>
+                  </div>
+                </article>
+                <article class="price-range">
+                  <h3>Price Range</h3>
+                  <input type="range" name="price-range" id="price-range" />
+                  <div class="range">
+                    <p><span>Min: </span>$3,000</p>
+                    <p><span>Max: </span>$7,000</p>
+                  </div>
+                </article>
+              </form>
+            </section>
+            <div class="property-listing-wrapper">
+              <secttion class="property-listing">
+                <article>
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-1.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/home.svg"
+                            alt="home icon"
+                          />
+                        </div>
+                        <span>House</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Sale</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Asri Permata</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">3 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1,500 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article>
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-2.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/apartment.svg"
+                            alt="appartment icon"
+                          />
+                        </div>
+                        <span>Apartment</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Rent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Riverfront View</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">3 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1,600 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article>
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-3.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/villa.svg"
+                            alt="villa icon"
+                          />
+                        </div>
+                        <span>villa</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Sale</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Modern Loft</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">3 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1,500 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article>
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-4.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/home.svg"
+                            alt="home icon"
+                          />
+                        </div>
+                        <span>House</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Rent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Beachfront Retreat</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">4 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2,200 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article class="tablet-version">
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-5.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/apartment.svg"
+                            alt="home icon"
+                          />
+                        </div>
+                        <span>Apartment</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Rent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Rustic Cabin</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">3 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1,000 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article class="tablet-version">
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-6.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/apartment.svg"
+                            alt="apartment icon"
+                          />
+                        </div>
+                        <span>Apartment</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Sale</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Lakeview House</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">3 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1,800 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article class="tablet-version desktop-version">
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-7.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/home.svg"
+                            alt="home icon"
+                          />
+                        </div>
+                        <span>Home</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Rent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Cozy Cottage</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>100 High St., London, WID INR</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">900 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+                <article class="tablet-version desktop-version">
+                  <div class="property-image">
+                    <div class="property-image-container">
+                      <img
+                        src="../assets/property/property-8.png"
+                        alt="property"
+                      />
+                    </div>
+                    <div class="category-status">
+                      <div class="badge category">
+                        <div class="badge-icon-container">
+                          <img
+                            src="../assets/property/villa.svg"
+                            alt="villa icon"
+                          />
+                        </div>
+                        <span>Villa</span>
+                      </div>
+                      <div class="badge status">
+                        <span>For Sale</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information">
+                    <div class="details">
+                      <h3>Downtown Condo</h3>
+                      <div class="location">
+                        <div class="location-image-container">
+                          <img
+                            src="../assets/property/location.svg"
+                            alt="location"
+                          />
+                        </div>
+                        <span>109 Corporation St, Manchester, M4 4DX</span>
+                      </div>
+                    </div>
+                    <div class="price"><span>$1,200</span></div>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bathroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">1 Bathroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/bedroom.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">2 Bedroom</div>
+                    </article>
+                    <article>
+                      <div class="features-image-container">
+                        <img
+                          src="../assets/property/area.svg"
+                          alt="feature icon"
+                        />
+                      </div>
+                      <div class="features-details">400 sq ft</div>
+                    </article>
+                  </div>
+                </article>
+              </secttion>
+              <button class="btn">View More</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- PROPERTY LISTING SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-text-block">
+          <h2>Need a help to find your comfort home?</h2>
+          <p class="contact-text">
+            Don't hesitate to get in touch with us and begin your journey to
+            owning your dream home. We're here to guide you every step of the
+            way!
+          </p>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="fullName">Full Name*</label>
+            <input type="text" name="fullName" id="fullName" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="7"
+              placeholder="Leave us a message..."
+            ></textarea>
+          </div>
+          <button class="btn" type="sumbit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+      <div class="container">
+        <section class="quiries">
+          <div class="enquires-section-container">
+            <h2>
+              We are an experienced real estate agency based in United Kingdom
+            </h2>
+            <section class="enquiries">
+              <div class="general-enquiries">
+                <h4 class="title">General Enquiries</h4>
+                <p class="email">info@example.com</p>
+              </div>
+              <div class="contact-number">
+                <h4 class="title">Phone</h4>
+                <p class="phone">+1 555-0123-456</p>
+              </div>
+              <div class="office">
+                <h4 class="title">Office</h4>
+                <p>789 Elm Street, Springfield. Illinois 62704</p>
+              </div>
+            </section>
+          </div>
+          <section class="navigations">
+            <section class="navigation">
+              <h4 class="title">Navigation</h4>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./pages/about.html">About Us</a></li>
+                <li><a href="./pages/property.html">Listing Product</a></li>
+                <li><a href="./pages/faq.html">FAQ's</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="#">Agent</a></li>
+              </ul>
+            </section>
+            <section class="social-medias">
+              <h4 class="title">Follow Us</h4>
+              <ul>
+                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://x.com">Twitter</a></li>
+                <li><a href="">Behance</a></li>
+                <li><a href="https://dribbble.com">Dribbble</a></li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <hr />
+        <div class="copy-right-section">
+          <div class="logo">
+            <p class="logo-icon">
+              <img src="../assets/hero/logo.svg" alt="logo" />
+            </p>
+            <span class="logo-text">Comfea</span>
+          </div>
+          <p class="copy-right-text">&copy; 2024, All Rights Reserved</p>
+          <div class="back-to-top-btn-container">
+            <span class="back-to-top">Back to top</span>
+            <div class="top-icon-container">
+              <img src="../assets/footer/top.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
 
     <script src="../js/navbar.js"></script>
   </body>
