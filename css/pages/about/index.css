@@ -2,8 +2,7 @@
 @import url("../../base.css");
 
 /* header style */
-@import url("../home/header.css"); /* This style is from home section */
-@import url("../about/header.css"); /* This style is his own */
+@import url("../about/header.css"); 
 
 /* explore css */
 @import url("./explore.css");
@@ -16,3 +15,9 @@
 
 /* testimonials css */
 @import url("./testimonials.css");
+
+/* faq css */
+@import url('./faq.css');
+
+/* footer css */
+@import url('./footer.css');

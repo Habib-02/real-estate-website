@@ -1,0 +1,103 @@
+.testimonials {
+  padding: 6rem 0;
+}
+.testimonials h2 {
+  font-size: var(--heading-two);
+  font-weight: var(--fw-regular);
+  color: var(--grey-900);
+  margin-bottom: 2.4rem;
+}
+.testimonials-text {
+  font-size: var(--font-medium);
+  color: var(--grey-600);
+}
+.testimonials .testimonial {
+  margin-top: 8rem;
+}
+.testimonial .quote-icon-container {
+  width: 2.4rem;
+  height: 1.8rem;
+  line-height: 0;
+}
+.testimonial h3 {
+  font-size: var(--heading-two);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+  line-height: 1.3;
+  margin: 2.4rem 0;
+}
+.testimonial-text {
+  font-size: var(--font-large);
+  color: var(--grey-600);
+}
+.testimonial figcaption {
+  font-size: var(--font-medium);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+  margin: 2.4rem 0;
+}
+.testimonial .slide-controller {
+ display: flex;
+ margin-bottom: 5.5rem;
+ gap: 0.8rem;
+}
+.testimonial .controller {
+  width: 5rem;
+  height: 4px;
+  background-color: var(--grey-200);
+  border-radius: 10px;
+}
+.testimonial .controller.active {
+  background-color: var(--grey-900);
+}
+
+/* TABLET VERSION */
+@media screen and (min-width: 868px) {
+  .container {
+    max-width: 1024px;
+  }
+  .testimonials-text-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials h2 {
+    font-size: var(--heading-two-medium);
+  }
+  .testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.5rem;
+    align-items: center;
+  }
+}
+
+/* DESLTOP VERSION */
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 1280px;
+  }
+  
+  .testimonials-text-block {
+    gap: 2.4rem;
+    align-items: center;
+  }
+  .testimonials h2 {
+    font-size: var(--heading-regular);
+  }
+  .testimonials-text {
+    font-size: var(--font-large);
+  }
+  .testimonial h3 {
+    font-size: 4.8rem;
+  }
+  .testimonial .quote-icon-container {
+    width: 4.8rem;
+    height: 3.7rem;
+  }
+  .testimonial-text {
+    font-size: var(--heading-three);
+  }
+  .testimonial figcaption {
+    font-size: var(--font-large);
+  }
+}

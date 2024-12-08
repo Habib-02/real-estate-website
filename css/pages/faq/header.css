@@ -1,0 +1,5 @@
+/* import header css from the home's header css */
+@import url('../home/header.css');
+
+/* import header css from the about's header css */
+@import url('../about/header.css');

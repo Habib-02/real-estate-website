@@ -54,6 +54,10 @@ header {
   border-radius: 15px;
   cursor: pointer;
 }
+.main-nav .btn-cta a {
+  text-decoration: none;
+  color: var(--grey-900);
+}
 /* TABLET VERSION - HEADER STYLE */
 @media screen and (max-width: 1024px) {
   header {
@@ -136,4 +140,7 @@ header {
     padding: 1rem 1.8rem;
     border-radius: 10px;
   }
+  .header-mobile.show .btn-cta a {
+    color: var(--grey-25);
+  };
 }
