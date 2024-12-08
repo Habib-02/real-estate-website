@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Bold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Black.woff2");
+  font-weight: 900;
+}
+
+/* RESET THE DEFAULT STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DEFINE CUSTOM PROPERTIES */
+:root {
+  /* define shades of grey */
+  --grey-25: #fcfcfc;
+  --grey-50: #fafafa;
+  --grey-100: #f4f4f5;
+  --grey-200: #e4e4e7;
+  --grey-300: #d1d1d6;
+  --grey-400: #a0a0ab;
+  --grey-500: #70707b;
+  --grey-600: #51525c;
+  --grey-700: #3f3f46;
+  --grey-800: #26272b;
+  --grey-900: #18181b;
+
+  /* define font-family and font-weight */
+  --ff-satoshi: "satoshi";
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* define font-size */
+  --heading-large: 10.4rem;
+  --heading-medium: 6.4rem;
+  --heading-regular: 5.2rem;
+
+  --heading-two: 3.2rem;
+  --heading-two-medium: 4rem;
+
+  --heading-three: 2.4rem;
+
+  --font-extra-large: 2rem;
+  --font-large: 1.8rem;
+  --font-medium: 1.6rem;
+  --font-small: 1.4rem;
+}
+html {
+  font-size: 62.5%; /* equivalent to 10px */
+}
+body {
+  font-family: var(--ff-satoshi);
+  font-size: var(--font-large);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  color: var(--grey-500);
+}
+img {
+  width: 100%;
+}
+
+/* Generec Rules */
+.btn {
+  background-color: var(--grey-900);
+  color: var(--grey-25);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.container {
+  padding: 0 2rem;
+}

@@ -1,0 +1,162 @@
+section.tips-tricks {
+  padding: 6rem 0;
+}
+section.tips-tricks h2 {
+  font-size: var(--heading-two);
+  font-weight: var(--fw-regular);
+  color: var(--grey-900);
+  margin-bottom: 2.4rem;
+}
+.tips-tricks-text {
+  font-size: var(--font-medium);
+  color: var(--grey-500);
+}
+.tips-tricks .tips-tricks-listings {
+  margin: 5.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+.tips-tricks .tips-tricks-listings > article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.6rem;
+}
+.tips-tricks-listings > article img {
+  border-radius: 10px;
+}
+.tips-tricks-listings .tips-tricks-desc .time p {
+  font-size: 1.2rem;
+  font-weight: var(--fw-medium);
+  color: var(--grey-500);
+  margin-bottom: 0.5rem;
+}
+.tips-tricks-listings .tips-tricks-desc .title h3 {
+  font-size: var(--heading-three);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+  line-height: 1.3;
+}
+.tips-tricks-listings .tips-tricks-desc .timer-icon-container {
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 0;
+}
+.tips-tricks-listings .tips-tricks-desc .reading-time {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+.tips-tricks-listings .tips-tricks-desc .reading-time p {
+  font-size: 1.2rem;
+  font-weight: var(--fw-medium);
+  color: var(--grey-500);
+}
+.tips-tricks-control-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tips-tricks-control-btns .dotted-style {
+  display: flex;
+  gap: 0.8rem;
+}
+.tips-tricks-control-btns .dotted-style span {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid var(--grey-500);
+  border-radius: 50%;
+}
+.tips-tricks-control-btns .dotted-style span.active {
+  background-color: var(--grey-900);
+  border-color: var(--grey-900);
+}
+.tips-tricks-control-btns .control-left,
+.tips-tricks-control-btns .control-right {
+  width: 4rem;
+  height: 4rem;
+  line-height: 0;
+  cursor: pointer;
+}
+
+/* TABLET VERSION - SECTION BLOG ARTICLES STYLING */
+@media screen and (min-width: 868px) {
+  section.tips-tricks h2 {
+    font-size: var(--heading-two-medium);
+  }
+  .tips-tricks .tips-tricks-listings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tips-tricks .tips-tricks-listings .not-in-tablet-version {
+    display: none;
+  }
+  .tips-tricks .tips-tricks-listings > article {
+    grid-template-columns: 1fr;
+  }
+  .tips-tricks-desc {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 0.1fr auto;
+    row-gap: 0.8rem;
+  }
+  .tips-tricks-desc .reading-time {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .tips-tricks-listings .tips-tricks-desc .title {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .tips-tricks-listings .tips-tricks-desc .time p {
+    margin: 0;
+  }
+  .tips-tricks-listings .tips-tricks-desc .reading-time {
+    margin: 0;
+  }
+  .tips-tricks-control-btns {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 1rem;
+  }
+  .tips-tricks-control-btns .control-left {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+  .tips-tricks-control-btns .control-right {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+  }
+}
+
+/* DESKTOP VERSION - TIPS AND TRICKS SECTION STYLING */
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 1280px;
+  }
+  .tips-tricks-text-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  section.tips-tricks h2 {
+    font-size: var(--heading-regular);
+    margin: 0;
+  }
+  .tips-tricks .tips-tricks-listings {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tips-tricks .tips-tricks-listings .not-in-tablet-version {
+    display: block;
+  }
+  .tips-tricks .tips-tricks-listings > article {
+    gap: 0;
+  }
+  .tips-tricks-desc {
+    margin-top: 1.6rem;
+  }
+}

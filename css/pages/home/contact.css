@@ -1,0 +1,83 @@
+section.contact {
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-image: url("../assets/contact/Contact\ Form.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6rem 0;
+  margin: 4rem 2rem;
+  border-radius: 10px;
+}
+.contact h2 {
+  font-size: var(--heading-two-medium);
+  font-weight: var(--fw-medium);
+  color: var(--grey-25);
+  line-height: 1.2;
+}
+.contact-text {
+  font-size: var(--font-medium);
+  color: var(--grey-25);
+  margin: 2.4rem 0;
+}
+.contact form {
+  background-color: var(--grey-25);
+  color: var(--grey-900);
+  padding: 1.6rem;
+  border-radius: 10px;
+}
+.contact form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.contact form .form-group label {
+  font-size: var(--font-medium);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+}
+.contact form .form-group input,
+.contact form .form-group textarea {
+  font-size: var(--font-small);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--grey-400);
+  border-radius: 5px;
+}
+.contact form .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* TABLET VERSION CONTACT SECIOTN STYLING */
+@media screen and (min-width: 868px) {
+  .contact .container {
+    max-width: 868px;
+  }
+  .contact .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.5rem;
+    align-items: start;
+  }
+  .contact h2 {
+    font-size: 4.8rem;
+  }
+  section.contact {
+    padding: 11rem 0;
+  }
+}
+
+/* DESKTOP VERSION CONTACT SECTION STYLING */
+@media screen and (min-width: 1024px) {
+  .contact .container {
+    max-width: 1280px;
+  }
+  .contact .container {
+    grid-template-columns: 2fr 1fr;
+    gap: 10rem;
+  }
+  .contact h2 {
+    font-size: var(--heading-medium);
+  }
+  .contact-text {
+    font-size: var(--font-extra-large);
+  }
+}

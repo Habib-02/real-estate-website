@@ -1,0 +1,16 @@
+@import url("../../base.css");
+
+header {
+  position: initial;
+}
+.main-nav .logo span:last-child {
+  color: var(--grey-900);
+}
+
+.main-nav .btn-cta {
+  color: var(--grey-25);
+  background-color: var(--grey-900);
+}
+.main-nav .nav-items a {
+  color: var(--grey-500);
+}

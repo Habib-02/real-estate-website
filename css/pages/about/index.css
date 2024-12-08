@@ -1,0 +1,18 @@
+/* base style */
+@import url("../../base.css");
+
+/* header style */
+@import url("../home/header.css"); /* This style is from home section */
+@import url("../about/header.css"); /* This style is his own */
+
+/* explore css */
+@import url("./explore.css");
+
+/* about ourself css */
+@import url("./about-ourself.css");
+
+/* trusted banks css */
+@import url("./trusted-banks.css");
+
+/* testimonials css */
+@import url("./testimonials.css");
