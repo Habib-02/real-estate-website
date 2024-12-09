@@ -82,7 +82,7 @@
 }
 .property-listing .features {
   display: flex;
-  gap: 4.5rem;
+  gap: 3.2rem;
   border-top: 3px solid var(--grey-200);
   padding-top: 1.6rem;
 }
@@ -91,7 +91,7 @@
   height: 2.4rem;
 }
 .property-listing .features-details {
-  font-size: var(--font-medium);
+  font-size: 1.5rem;
   color: var(--grey-500);
   padding-top: 0.8rem;
 }
