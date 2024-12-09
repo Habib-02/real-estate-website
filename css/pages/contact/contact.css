@@ -1,0 +1,118 @@
+.contact-page h2 {
+  font-size: var(--heading-two-medium);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+  text-align: center;
+}
+.contact-page .contact-text {
+  font-size: var(--font-medium);
+  color: var(--grey-500);
+  margin-top: 1.6rem;
+  text-align: center;
+}
+.contact-page form {
+  background-color: var(--grey-25);
+  color: var(--grey-900);
+  padding: 1.6rem;
+  border-radius: 10px;
+  margin: 4rem auto 5.5rem;
+  max-width: 868px;
+}
+.contact-page form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.contact-page form .form-group label {
+  font-size: var(--font-medium);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+}
+.contact-page form .form-group input,
+.contact-page form .form-group textarea {
+  font-size: var(--font-small);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--grey-400);
+  border-radius: 5px;
+}
+.contact-page form .form-group.privacy-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+.contact-page form .form-group.privacy-checkbox label {
+  font-size: var(--font-small);
+}
+.contact-page form .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+.contact-page .personal-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 4rem;
+  gap: 2.4rem;
+}
+.contact-page .personal-details img {
+  width: 32px;
+  height: 32px;
+}
+.contact-page .personal-details h3 {
+  font-size: var(--font-large);
+  font-weight: var(--fw-bold);
+  color: var(--grey-900);
+}
+.contact-page .personal-details p {
+  font-size: var(--font-medium);
+  color: var(--grey-500);
+  margin-top: 0;
+}
+.contact-page .personal-details div:last-child {
+  margin-top: 1.2rem;
+  font-size: var(--font-small);
+  font-weight: var(--fw-medium);
+  color: var(--grey-900);
+}
+.contact-page .personal-details a {
+  text-decoration: none;
+  color: var(--grey-900);
+}
+
+/* TABLET VERSION CONTACT SECIOTN STYLING */
+@media screen and (min-width: 868px) {
+  .contact-page .container {
+    max-width: 868px;
+    margin: 0 auto;
+  }
+  .contact-page .contact-text {
+    font-size: var(--font-medium);
+  }
+  .contact-page .personal-details-wrapper {
+    max-width: 868px;
+    margin: 0 auto;
+  }
+}
+
+/* DESKTOP VERSION CONTACT SECTION STYLING */
+@media screen and (min-width: 1024px) {
+  .contact-page .container {
+    max-width: 1280px;
+  }
+  .contact-page h2 {
+    font-size: var(--heading-regular);
+  }
+  .contact-text {
+    font-size: var(--font-extra-large);
+  }
+  .contact-page .contact-page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.5rem;
+    margin: 8rem 0;
+  }
+  .contact-page form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,5 +1,13 @@
 /* import base style */
-@import url('../../base.css');
+@import url("../../base.css");
 
 /* import header css */
-@import url('./header.css');
+@import url("./header.css");
+
+/* import faq section css */
+@import url("./faq-section.css");
+
+/* import subscribe css */
+@import url("./subscribe.css");
+
+@import url("./footer.css");

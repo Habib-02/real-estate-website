@@ -1,0 +1,111 @@
+.subscribe {
+  padding-bottom: 4rem;
+}
+.subscribe-wrapper {
+  background-image: url("../../../assets/blog-section/blog-subscribe-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  padding: 8rem 2rem;
+  border-radius: 36px;
+  margin: 0 1.6rem;
+}
+.subscribe-wrapper::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 36px;
+}
+.subscribe h2 {
+  font-size: var(--heading-two);
+  font-weight: var(--fw-medium);
+  color: var(--grey-25);
+  text-align: center;
+}
+.subscribe p {
+  font-size: var(--font-small);
+  color: var(--grey-25);
+  text-align: center;
+  margin: 2.4rem 0 4rem;
+}
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 1;
+}
+.subscribe form input {
+  font-size: var(--font-small);
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 10px;
+}
+.subscribe form input[type="text"] {
+  background-color: #fff;
+}
+.subscribe form input[type="submit"] {
+  background-color: var(--grey-900);
+  color: var(--grey-25);
+  font-weight: var(--fw-bold);
+}
+
+/* TABLET VERSION */
+@media screen and (min-width: 868px) {
+  .container {
+    max-width: 868px;
+    margin: 0 auto;
+  }
+  .subscribe-wrapper {
+    background-image: url("../../../assets/blog-section/blog-subscribe.png");
+  }
+  .subscribe-content-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .subscribe h2 {
+    font-size: 4.8rem;
+  }
+  .subscribe p {
+    font-size: var(--font-medium);
+  }
+  .subscribe form {
+    position: relative;
+  }
+  .subscribe form input:not(input[type="submit"]) {
+    padding: 1.8rem 1.8rem;
+  }
+  .subscribe form input[type="submit"] {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .subscribe h2 {
+    font-size: var(--heading-medium);
+  }
+  .subscribe p {
+    font-size: var(--font-extra-large);
+  }
+  .subscribe-content-wrapper {
+    max-width: 800px;
+  }
+  .subscribe form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
